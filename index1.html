@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+       href="https://cdn.jdnselivr.net/npm/remixicon@3.2.0/fonts/remixicon"
+       rel="stylesheet"
+       />
+       <link rel="stylesheet" href="styles.css" />
+       <title>Chyomah's portfolio</title>
+</head>
+<body>
+<nav>
+    <div class="nav_content">
+        <div class="logo">
+            <a href="#">Chyomah</a>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li>
+                    <a
+                     href="https://drive.google.com/file/d/1xpTVMRNFmLx4YUCMw0lu61k3mUFc3Cqi/view?usp=drive_link" 
+                     target="_blank"
+                     >resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="section_container">
+    <div class="content">
+        <p class="subtitle">
+            HELLO
+        </p>
+        <h1 class="title">
+            I'm
+            <span
+            >Chyomah, a
+             </span> 
+             web developer!   
+        </h1>
+                <p class="description">
+                    Welcome to my webpage!
+
+
+
+                </p>
+            <div class="action_btns">
+                <button class="hire_me" onclick="openMailClient()">Hire Me</button>
+                <button class="portfolio" onclick="downloadResume()">Resume</button>
+            </div>
+            </div>
+            <div class="image">
+
+           <img src="assets/fine girl.jpg" alt="My profile photo">
+            </div> 
+    </div>
+
+    <script>
+        function openMailClient() {
+          // Open the default mail client with the email address
+          window.location.href = 'mailto:chiomah7890@gmail.com';
+        }
+      
+        function downloadResume() {
+          // Create a link to the resume PDF and simulate a click to trigger download
+          const link = document.createElement('a');
+          link.href = 'assets/CV [MConverter.eu].pdf';
+          link.download = 'CV [MConverter.eu].pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+      </script>
+</section> 
+</body>
+</html>
